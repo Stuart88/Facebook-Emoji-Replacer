@@ -1,8 +1,12 @@
-"use strict";
+
 // 'use strict';
+
 // import './app.css';
+
 // (function() {
+ 
 //   // Communicate with background file by sending a message
+  
 //   chrome.runtime.sendMessage(
 //     {
 //       type: 'GREETINGS',

@@ -1,22 +1,22 @@
 {
-  "manifest_version": 2,
-  "name": "First",
-  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "manifest_version": 3,
+  "name": "Facebook Emoji Replacer",
   "version": "0.1.0",
-  "description": "My Chrome Extension",
+  "description": "Replace the awful Facebook emojis with standard Unicode icons from your browser",
+  "background": {
+    "service_worker": "background.js"
+  },
   "icons": {
     "16": "icons/icon_16.png",
     "32": "icons/icon_32.png",
     "48": "icons/icon_48.png",
     "128": "icons/icon_128.png"
   },
-  "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
-  },
-  "chrome_url_overrides": {
-    "newtab": "index.html"
-  }
+  "permissions": [
+    "webNavigation",
+    "scripting",
+    "accessibilityFeatures.modify",
+    "accessibilityFeatures.read"
+  ],
+  "host_permissions": ["https://www.facebook.com/"]
 }

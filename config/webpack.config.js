@@ -10,6 +10,8 @@ const config = merge(common, {
   entry: {
     app: PATHS.src + '/app.js',
     background: PATHS.src + '/background.js',
+    emojiReplace: PATHS.src + '/emojiReplace.js',
+    emojis: PATHS.src + '/emojis.js',
   },
 });
 
